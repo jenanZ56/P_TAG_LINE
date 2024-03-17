@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>limited time offer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link href="css/tiny-slider.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<style>
+  
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f0f0f0; /* Lighter background */
+}
+
+.Deals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.offer {
+  width: 21.5%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px; /* Increased border radius */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; /* Added hover effect */
+}
+h1 {
+  font-size: 2.5em;
+  color:rgb(184, 153, 77);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.offer:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.offer img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px; 
+}
+
+/* ... remaining styles ... */
+
+/* Additional styles for visual appeal */
+.Deals h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.offer h3 {
+  margin-top: 10px;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+h4{
+  font-size: 1em;
+  color: rgb(6, 97, 6);
+  text-align: center;
+}
+.price {
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #333;
+}
+
+.discount {
+  font-size: 12px;
+  color: #999;
+}
+
+.discount-price {
+  color: #f00;
+}
+
+.button {
+      background-color:rgb(238, 238, 37);
+      border-color:rgb(224, 224, 55);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .button:hover {
+      background-color:rgb(224, 224, 55);
+    }
+</style>
+<body>
+   <!-- Start Header/Navigation -->
+   <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">TAG LINE<span>.</span></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsFurni">
+        <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="active"><a class="nav-link" href="about.html">About us</a></li>
+          <li><a class="nav-link" href="connect.html">Contact us</a></li>
+        </ul>
+
+        <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+          <li><a class="nav-link" href="#"><img src="img/user.svg"></a></li>
+          <li><a class="nav-link" href="cart.html"><img src="img/cart.svg"></a></li>
+        </ul>
+      </div>
+    </div>
+      
+  </nav>
+  <!-- End Header/Navigation -->
+<header>
+</header>
+<br><br>
+ <h1>Limited Time Offers⏰</h1><br>
+<div class="Deals">
+
+
+    
+  <div class="offer">
+    <img src="img/pic 2 (Township_White).jpg" alt="pic 2 (Township_White)">
+    <h4>Township_White</h4>
+      <p class="price">Price is BHD 1020  </p>
+<p class="discount">BHD <span style="text-decoration: line-through;">1200</span> <span class="discount-price">(Save 180 BD)</span></p>
+<button class="add-to-cart" onclick="add_cart('pic 2 (Township_White)', 'img/pic 2 (Township_White).jpg', '1020')">Add to Cart</button>
+</div>
+
+	 
+    <div class="offer">
+      <img src="img/Bayville White.jpg" alt="Bayville White">
+      <h4>Bayville White</h4>
+      <p class="price">Price is 1450 BHD </p>
+<p class="discount">BHD <span style="text-decoration: line-through;">1232.50</span> <span class="discount-price">(Save 217.50 BD)</span></p>
+<button class="add-to-cart" onclick="add_cart('Bayville White', 'img/Bayville White.jpg', '780')">Add to Cart</button>
+</div> 
+	
+	
+	
+    <div class="offer">
+      <img src="img/Southport Espresso Shaker.jpg" alt="Southport Espresso Shaker">
+      <h4>Southport Espresso Shaker</h4>
+      <p class="price">Price is 816 BHD</p>
+<p class="discount">BHD <span style="text-decoration: line-through;">960</span> <span class="discount-price">(Save 144 BD)</span></p>
+<button class="add-to-cart" onclick="add_cart('Southport Espresso Shaker', 'img/Southport Espresso Shaker.jpg', '816')">Add to Cart</button>
+</div>   
+
+
+	
+	
+    <div class="offer">
+      <img src="img/Brilliant White Shaker - Quick Ship.jpg" alt="Brilliant White Shaker - Quick Ship">
+      <h4>Brilliant White Shaker - Quick Ship</h4>
+      <p class="price">Price is 953.70 BHD</p>
+<p class="discount">BHD <span style="text-decoration: line-through;">1122</span> <span class="discount-price">(Save 168.3 BD)</span></p>
+<button class="add-to-cart" onclick="add_cart('Brilliant White Shaker - Quick Ship', 'img/Brilliant White Shaker - Quick Ship.jpg', '953.70')">Add to Cart</button>
+</div>    
+
+
+    <div class="offer">
+      <img src="img/Stratton Light Grey Shaker.jpg" alt="Stratton Light Grey Shaker">
+      <h4>Stratton Light Grey Shaker</h4>
+      <p class="price">price is 1275</p>
+<p class="discount">BHD <span style="text-decoration: line-through;">1500</span> <span class="discount-price">(Save 225 BD)</span></p>
+<button class="add-to-cart" onclick="add_cart('Stratton Light Grey Shaker', 'img/Stratton Light Grey Shaker.jpg', '1275')">Add to Cart</button>
+</div>  
+
+	
+	
+    <div class="offer">
+      <img src="img/Charlotte White.jpg" alt="Charlotte White">
+      <h4>Charlotte White</h4>
+      <p class="price">Price is 1122 BHD</p>
+<p class="discount">BHD <span style="text-decoration: line-through;">1320</span> <span class="discount-price">(Save 198 BD)</span></p>
+<button class="add-to-cart" onclick="add_cart('Charlotte White', 'img/Charlotte White.jpg', '1122')">Add to Cart</button>
+</div> 
+	   
+
+	
+
+    <div class="offer">
+      <img src="img/Gramercy White.jpg" alt="Gramercy White">
+      <h4>Gramercy White</h4>
+      <p class="price">Price is 1528.3 BHD</p>
+<p class="discount">BHD <span style="text-decoration: line-through;">1798</span> <span class="discount-price">(Save 269.7 BD)</span></p>
+<button class="add-to-cart" onclick="add_cart('Gramercy White', 'img/Gramercy White.jpg', '1528.3')">Add to Cart</button>
+</div>
+  
+
+
+    <div class="offer">
+      <img src="img/Union White.jpg" alt="Union White">
+      <h4>Union White</h4>
+      <p class="price">Price is 1800 BHD</p>
+<p class="discount">BHD <span style="text-decoration: line-through;">1530</span> <span class="discount-price">(Save 270 BD)</span></p>
+<button class="add-to-cart" onclick="add_cart('Union White', 'img/Union White.jpg', '1800')">Add to Cart</button>
+</div> 
+	  
+  </div>
+  
+<h4>Offers Ends 16 jan 2024</h4>
+    <!--Footer start-->
+    <div class="row" id="footer" style="margin-left:0px;">
+      <div class="col-lg-3">
+          <div class="footerheads">Call & message Us</div>
+          <span class="halfribbon"></span>
+          <br>
+          <div id="footertxt" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">Telphone Number : <a href=" tel:33338890 ">33338890</a></div>
+          <div id="footertxt" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">Email : <a href="TagLineKitchens@company.com">TagKit@company.com</a>
+          </div>
+          &nbsp;
+      </div>
+      <div class="col-lg-3">
+          <div class="footerheads">We offer</div>
+          <span class="halfribbon"></span>
+          <br>
+          <a href="makedesing.html" style="font-size:20px;text-shadow:2px 2px 4px #000000;"> Design</a><br>
+          <a href="shope.html" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Kitchens Furniture</a><br>
+          <a href="Fixingpage.html" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Kitchens Fixsing</a><br>
+          <a href="project-243.html" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Offers</a><br>
+          <a href="Services.html" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Service</a><br>
+          &nbsp;
+      </div>
+      <div class="col-lg-3">
+          <div class="footerheads">Follow Us</div>
+          <span class="halfribbon"></span>
+          <br>
+<!-- Add icon library -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+         <!-- Add font awesome icons -->
+  <div class="col-lg-2">
+  <a href="#"  class="fa fa-instagram" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+  </div> <div class="col-lg-2">
+          <a href="#" class="fa fa-facebook" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+ </div> <div class="col-lg-2">
+      <a href="#" class="fa fa-youtube" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+</div><div class="col-lg-2">
+          <a href="#" class="fa fa-twitter" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+</div>
+   
+          
+          <br><br>
+      </div>
+      <div class="col-lg-3">
+          <div class="footerheads">Worktimes</div>
+          <span class="halfribbon"></span>
+          <br>
+          <ul>
+
+              <li id="footertxt"> <i style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">9:00am-12:00am</i></li>
+              <li id="footertxt"><i  style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">Closed on Friday</i></li>
+          </ul>
+          &nbsp;
+      </div>
+  </div>
+  <!--Footer end-->
+  <!--CC-->
+  <div class="cc">
+      <small class="cc"> Copyright by TagLineKitchens © 2023
+      </small>
+  </div>
+  <script src="js/cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Discount</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link href="css/tiny-slider.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<style>
+  
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f0f0f0; /* Lighter background */
+}
+
+.Deals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.offer {
+  width: 21.5%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px; /* Increased border radius */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; /* Added hover effect */
+}
+h1 {
+  font-size: 2.5em;
+  color:rgb(184, 153, 77);
+  margin-bottom: 30px;
+  text-align: center;
+}
+h4{
+  font-size: 1em;
+  color: rgb(6, 97, 6);
+  text-align: center;
+}
+.offer:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.offer img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px; 
+}
+
+/* ... remaining styles ... */
+
+/* Additional styles for visual appeal */
+.Deals h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.offer h3 {
+  margin-top: 10px;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #333;
+}
+
+.discount {
+  font-size: 12px;
+  color: #999;
+}
+
+.discount-price {
+  color: #f00;
+}
+
+.button {
+      background-color:rgb(238, 238, 37);
+      border-color:rgb(224, 224, 55);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .button:hover {
+      background-color:rgb(224, 224, 55);
+    }
+</style>
+<body>
+<header>
+</header>
+
+  <!-- Start Header/Navigation -->
+  <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">TAG LINE<span>.</span></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsFurni">
+        <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="active"><a class="nav-link" href="about.html">About us</a></li>
+          <li><a class="nav-link" href="connect.html">Contact us</a></li>
+        </ul>
+
+        <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+          <li><a class="nav-link" href="#"><img src="img/user.svg"></a></li>
+          <li><a class="nav-link" href="cart.html"><img src="img/cart.svg"></a></li>
+        </ul>
+      </div>
+    </div>
+      
+  </nav>
+  <!-- End Header/Navigation -->
+  <br><br>
+ <h1>Discounts</h1><br>
+ <div class="Deals">
+  <div class="offer">
+    <img src="img/KITCHEN CHAIRS IN CONCRETE OAK MATT.jpg" alt="KITCHEN CHAIRS IN CONCRETE OAK MATT">
+    <h4>KITCHEN CHAIRS IN CONCRETE OAK MATT</h4>
+    <p class="price">Price is BHD 150</p>
+    <p class="discount">BHD <span style="text-decoration: line-through;">200</span> <span class="discount-price">(Save 50 BD)</span></p>
+    <button class="add-to-cart" onclick="add_cart('KITCHEN CHAIRS IN CONCRETE OAK MATT', 'img/KITCHEN CHAIRS IN CONCRETE OAK MATT.jpg', '150')">Add to Cart</button>
+  </div>
+
+  <div class="offer">
+    <img src="img/Squeeze in a larder.jpg" alt="Squeeze in a larder">
+    <h4>Squeeze in a larder</h4>
+    <p class="price">Price is BHD 70</p>
+    <p class="discount">BHD <span style="text-decoration: line-through;">122</span> <span class="discount-price">(Save 52 BD)</span></p>
+    <button class="add-to-cart" onclick="add_cart('Squeeze in a larder', 'img/Squeeze in a larder.jpg', '70')">Add to Cart</button>
+  </div>
+
+  <div class="offer">
+    <img src="img/STORAGE.jpg" alt="STORAGE">
+    <h4>STORAGE</h4>
+    <p class="price">Price is BHD 120</p>
+    <p class="discount">BHD <span style="text-decoration: line-through;">170</span> <span class="discount-price">(Save 50 BD)</span></p>
+    <button class="add-to-cart" onclick="add_cart('STORAGE', 'img/STORAGE.jpg', '120')">Add to Cart</button>
+  </div>
+
+  <div class="offer">
+    <img src="img/TWO-TONE COLOUR SPLIT KITCHEN.jpg" alt="TWO-TONE COLOUR SPLIT KITCHEN">
+    <h4>TWO-TONE COLOUR SPLIT KITCHEN</h4>
+    <p class="price">Price is BHD 994</p>
+    <p class="discount">BHD <span style="text-decoration: line-through;">1600</span> <span class="discount-price">(Save 606 BD)</span></p>
+    <button class="add-to-cart" onclick="add_cart('TWO-TONE COLOUR SPLIT KITCHEN', 'img/TWO-TONE COLOUR SPLIT KITCHEN.jpg', '994')">Add to Cart</button>
+  </div>
+
+  <div class="offer">
+    <img src="img/PATTERNED TILE SPLASHBACK.jpg" alt="PATTERNED TILE SPLASHBACK">
+    <h4>PATTERNED TILE SPLASHBACK</h4>
+    <p class="price">Price is BHD 240</p>
+    <p class="discount">BHD <span style="text-decoration: line-through;">320</span> <span class="discount-price">(Save 80 BD)</span></p>
+    <button class="add-to-cart" onclick="add_cart('PATTERNED TILE SPLASHBACK', 'img/PATTERNED TILE SPLASHBACK.jpg', '240')">Add to Cart</button>
+  </div>
+
+  <div class="offer">
+    <img src="img/MILANO CHAIRS IN METALLIC SILVER & SMOKE BLUE.jpg" alt="MILANO CHAIRS IN METALLIC SILVER & SMOKE BLUE">
+    <h4>MILANO CHAIRS IN METALLIC SILVER & SMOKE BLUE</h4>
+    <p class="price">Price is BHD 520</p>
+    <p class="discount">BHD <span style="text-decoration: line-through;">600</span> <span class="discount-price">(Save 80 BD)</span></p>
+    <button class="add-to-cart" onclick="add_cart('MILANO CHAIRS IN METALLIC SILVER & SMOKE BLUE', 'img/MILANO CHAIRS IN METALLIC SILVER & SMOKE BLUE.jpg', '520')">Add to Cart</button>
+  </div>
+
+  <div class="offer">
+    <img src="img/AUTOGRAPH KITCHEN IN WHITE.jpg" alt="AUTOGRAPH KITCHEN IN WHITE">
+    <h4>AUTOGRAPH KITCHEN IN WHITE</h4>
+    <p class="price">Price is BHD 780</p>
+    <p class="discount">BHD <span style="text-decoration: line-through;">1010</span> <span class="discount-price">(Save 230 BD)</span></p>
+    <button class="add-to-cart" onclick="add_cart('AUTOGRAPH KITCHEN IN WHITE', 'img/AUTOGRAPH KITCHEN IN WHITE.jpg', '780')">Add to Cart</button>
+  </div>
+
+  <div class="offer">
+    <img src="img/MILANO ELEMENTS IN METALLIC SILVER & SMOKE BLUE.jpg" alt="MILANO ELEMENTS IN METALLIC SILVER & SMOKE BLUE">
+    <h4>MILANO ELEMENTS IN METALLIC SILVER & SMOKE BLUE</h4>
+    <p class="price">Price is BHD 912</p>
+    <p class="discount">BHD <span style="text-decoration: line-through;">1300</span> <span class="discount-price">(Save 388 BD)</span></p>
+    <button class="add-to-cart" onclick="add_cart('MILANO ELEMENTS IN METALLIC SILVER & SMOKE BLUE', 'img/MILANO ELEMENTS IN METALLIC SILVER & SMOKE BLUE.jpg', '912')">Add to Cart</button>
+  </div>
+</div>
+  
+    <!--Footer start-->
+    <div class="row" id="footer" style="margin-left:0px;">
+      <div class="col-lg-3">
+          <div class="footerheads">Call & message Us</div>
+          <span class="halfribbon"></span>
+          <br>
+          <div id="footertxt" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">Telphone Number : <a href=" tel:33338890 ">33338890</a></div>
+          <div id="footertxt" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">Email : <a href="TagLineKitchens@company.com">TagKit@company.com</a>
+          </div>
+          &nbsp;
+      </div>
+      <div class="col-lg-3">
+          <div class="footerheads">We offer</div>
+          <span class="halfribbon"></span>
+          <br>
+  <a href="#" style="font-size:20px;text-shadow:2px 2px 4px #000000;"> Design</a><br>
+          <a href="shope.html" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Kitchens Furniture</a><br>
+  <a href="#" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Kitchens Fixsing</a><br>
+          <a href="#" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Offers</a><br>
+          <a href="#" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Service</a><br>
+          &nbsp;
+      </div>
+      <div class="col-lg-3">
+          <div class="footerheads">Follow Us</div>
+          <span class="halfribbon"></span>
+          <br>
+<!-- Add icon library -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+         <!-- Add font awesome icons -->
+  <div class="col-lg-2">
+  <a href="#"  class="fa fa-instagram" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+  </div> <div class="col-lg-2">
+          <a href="#" class="fa fa-facebook" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+ </div> <div class="col-lg-2">
+      <a href="#" class="fa fa-youtube" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+</div><div class="col-lg-2">
+          <a href="#" class="fa fa-twitter" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+</div>
+   
+          
+          <br><br>
+      </div>
+      <div class="col-lg-3">
+          <div class="footerheads">Worktimes</div>
+          <span class="halfribbon"></span>
+          <br>
+          <ul>
+
+              <li id="footertxt"> <i style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">9:00am-12:00am</i></li>
+              <li id="footertxt"><i  style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">Closed on Friday</i></li>
+          </ul>
+          &nbsp;
+      </div>
+  </div>
+  <!--Footer end-->
+  <!--CC-->
+  <div class="cc">
+      <small class="cc"> Copyright by TagLineKitchens © 2023
+      </small>
+  </div>
+<script src="js/cart.js"></script>
+</body>
+</html>
